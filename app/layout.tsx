@@ -4,8 +4,8 @@ import { Outfit, Geist } from "next/font/google";
 import "./globals.css";
 import HeaderWrapper from "@/components/layout/header-wrapper";
 import Footer from "@/components/layout/footer";
-import { QueryProvider } from "@/components/providers/query-provider";
-import { Toaster } from "@/components/ui/sonner";
+// import { QueryProvider } from "@/components/providers/query-provider";
+// import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
@@ -16,9 +16,9 @@ const outfitFont = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "avion",
+  title: "Avion",
   description:
-    "avion is a ai learning platform to connect with other learners in the community",
+    "Avion is a ai learning platform to connect with other learners in the community",
 };
 
 export default function RootLayout({
@@ -30,12 +30,12 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" className={cn("font-sans", geist.variable)}>
         <body className={`${outfitFont.className} antialiased`}>
-          <QueryProvider>
+          {/* <QueryProvider>
             <HeaderWrapper />
             {children}
             <Footer />
           </QueryProvider>
-          <Toaster position="top-right" />
+          <Toaster position="top-right" /> */}
         </body>
       </html>
     </ClerkProvider>
