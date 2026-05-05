@@ -4,8 +4,7 @@ import { Outfit, Geist } from "next/font/google";
 import "./globals.css";
 import HeaderWrapper from "@/components/layout/header-wrapper";
 import Footer from "@/components/layout/footer";
-// import { QueryProvider } from "@/components/providers/query-provider";
-// import { Toaster } from "@/components/ui/sonner";
+import { QueryProvider } from "@/components/providers/query-provider";
 import { cn } from "@/lib/utils";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
@@ -30,12 +29,11 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" className={cn("font-sans", geist.variable)}>
         <body className={`${outfitFont.className} antialiased`}>
-          {/* <QueryProvider>
-            <HeaderWrapper />
-            {children}
-            <Footer />
+         <QueryProvider>
+          <HeaderWrapper />
+          {children}
+          <Footer />
           </QueryProvider>
-          <Toaster position="top-right" /> */}
         </body>
       </html>
     </ClerkProvider>

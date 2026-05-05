@@ -1,5 +1,5 @@
 import { PricingTable } from "@clerk/nextjs";
-// import SectionHeading from "./section-heading";
+import SectionHeading from "./section-heading";
 
 export default function PricingSection() {
   return (

@@ -1,5 +1,5 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
-// import SectionHeading from "./section-heading";
+import SectionHeading from "./section-heading";
 
 const features = [
   {
