@@ -1,6 +1,6 @@
 # Avion- A community learning platform where learners find compatible study partners and achieve their goals together!
 
-Get complete access to Meetsy, an AI-powered learning platform that connects you with the perfect learning partners based on your goals, interests, and learning style in one intelligent matching system.
+Get complete access to Avion, an AI-powered learning platform that connects you with the perfect learning partners based on your goals, interests, and learning style in one intelligent matching system.
 
 ## ⚡ Features
 
@@ -63,7 +63,7 @@ Create a `.env.local` file in the root directory:
 
 ```env
 # Database
-DATABASE_URL=postgresql://user:password@localhost:5432/meetsy
+DATABASE_URL=postgresql://user:password@localhost:5432/Avion
 
 # Clerk Authentication
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
