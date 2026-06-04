@@ -10,7 +10,6 @@ import { authMiddleware } from "./middleware/auth-middleware";
 type Variables = {
   userId: string;
 };
-
 const validateBody = async <T>(c: Context, schema: ZodType<T>): Promise<T> => {
   const body = await c.req.json();
   const result = schema.safeParse(body);
